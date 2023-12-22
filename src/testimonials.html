@@ -3,35 +3,65 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title id="title">Testimonials</title>
+        <title>Testimonials</title>
+        <link rel= "stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="h-screen grid bg-zinc-500">
         <header>
-            <nav>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
-                <span>Testimonials</span> 
-                <a href="mailto:asratmaedot@gmail.com">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"></path> </g></svg></a>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div>
+                 <nav>
+                    <div class="flex justify-between items-center">
+                        <div class="px-4 cursor-pointer lg:hidden" id="burger">
+                            <svg class="w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </div>
+                        <div>
+                            <span class="font-bold lg:hidden text-xl">Testimonials</span>
+                        </div>
+                        <div>
+                            <a href="mailto:asratmaedot@gmail.com" class="lg:hidden">
+                            <svg class="w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="black"></path> </g></svg></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <ul class="text-xl mt-4 ml-4 lg:mr-4 hidden lg:block lg:text-right" id="menu">
+                                <a href="home.html" class="lg:mx-2">Home</a> 
+                                <a href="about.html" class="lg:mx-2">About</a> 
+                                <a href="resume.html" class="lg:mx-2">Resume</a>
+                                <a href="skills.html" class="lg:mx-2">Skills</a>
+                                <a href="testimonials.html" class="border-l-4 lg:border-l-0 lg:border-b-4 border-lime-200 lg:mx-2">Testimonials</a>
+                                <a href="contact.html" class="lg:mx-2">Contact</a>
+                            </ul>
+                        </div>
+                    </div>
+                
+                 </nav>
+                </div>
         </header>
         <div>
-            <img src="images/vig.jpg" alt="Testimonial">
             <div>
-                <hgroup>
-                    <h4>Vignesha Chiniah</h4>
-                    <p>Director, Future Africa Ambassadors</p>
-                </hgroup>
-                <q>Maedot, a participant of the 2021 Future Africa Ambassadors program, is an exceptional front-end developer. Maedot's humility, willingness to learn, and commitment to excellence make her a valuable asset to any team. She is destined to make a significant impact in the future of web development.</q>
+                <div>
+                    <div class="lg:flex rounded-2xl border-2 border-lime-200 m-4 p-4 bg-gray-800">
+                        <div class="flex justify-center">
+                            <figure class="w-80 h-96">
+                                <img src="images/vig.jpg" alt="Testimonial" class="rounded-3xl col-span-1">
+                            </figure>
+                        </div>
+                        <div class="text-white pl-4 col-span-1">
+                            <hgroup class="items-center my-4">
+                                <h4 class="lg:text-4xl text-3xl">Vignesha Chiniah</h4>
+                                <p class="lg:text-2xl text-xl">Director, Future Africa Ambassadors</p>
+                            </hgroup>
+                            <q class="italic">Maedot, a participant of the 2021 Future Africa Ambassadors program, is an exceptional front-end developer. Maedot's humility, willingness to learn, and commitment to excellence make her a valuable asset to any team. She is destined to make a significant impact in the future of web development.</q>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <footer>&copy; All rights reserved to Maedot, 2023</footer>
+        
+        <footer class="text-right px-2 text-black">
+            &copy; All rights reserved to Maedot, 2023
+        </footer>
+    <script src="js/tail.js"></script>
     </body>
 </html>

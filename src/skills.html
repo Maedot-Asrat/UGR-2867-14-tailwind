@@ -3,44 +3,100 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title id="title">Skills</title>
+        <title>Skills</title>
+        <link rel= "stylesheet" href="css/style.css">
+       
     </head>
-    <body>
+    <body class="h-screen grid bg-zinc-500">
         <header>
-            <nav>
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
-                <span>Skills</span> 
-                <a href="mailto:asratmaedot@gmail.com">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"></path> </g></svg></a>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div>
+                 <nav>
+                    <div class="flex justify-between items-center">
+                        <div class="px-4 cursor-pointer lg:hidden" id="burger">
+                            <svg class="w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </div>
+                        <div>
+                            <span class="font-bold lg:hidden text-xl">Skills</span>
+                        </div>
+                        <div>
+                            <a href="mailto:asratmaedot@gmail.com" class="lg:hidden">
+                            <svg class="w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="black"></path> </g></svg></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <ul class="text-xl mt-4 ml-4 lg:mr-4 hidden lg:block lg:text-right" id="menu">
+                                <a href="home.html" class="lg:mx-2">Home</a> 
+                                <a href="about.html" class="lg:mx-2">About</a> 
+                                <a href="resume.html" class="lg:mx-2">Resume</a>
+                                <a href="skills.html" class="border-l-4 lg:border-l-0 lg:border-b-4 border-lime-200 lg:mx-2">Skills</a>
+                                <a href="testimonials.html" class="lg:mx-2">Testimonials</a>
+                                <a href="contact.html" class="lg:mx-2">Contact</a>
+                            </ul>
+                        </div>
+                    </div>
+                
+                 </nav>
+                </div>
         </header>
-        <h3>Skills in Development and Designing</h3>
-        <section>
-          <img src="images/html.png" alt="html">
-          <h4>HTML</h4>
-          <p>Intermediate</p>
-        </section>
-        <section>
-          <img src="images/css.png" alt="css">
-          <h4>CSS</h4>
-          <p>Intermediate</p></section>
-        <section>
-          <img src="images/python.png" alt="python">
-          <h4>Python</h4>
-          <p>Beginner</p>
-        </section>
-        <section>
-          <img src="images/figma.png" alt="figma">
-          <h4>Figma</h4>
-          <p>Advanced</p></section>
-        <footer>&copy; All rights reserved to Maedot, 2023</footer>
+        <div class="bg-radial-grey mt-0 lg:mx-52">
+            <h3 class="text-white text-center text-3xl mb-8">Skills in Development and Designing</h3>
+            <section class="text-center">
+                <div class="grid justify-center">
+                    <section class="mb-6 w-72 lg:w-auto hover:shadow-2xl">
+                        <div class="lg:grid grid-cols-3 bg-gray-800 border-lime-200 border-2 p-4">
+                            <div class="col-span-1 flex justify-center">
+                                <img src="images/html.png" alt="html" class="w-16 h-16 inline-block">
+                            </div>
+                            <h4 class="col-span-1 text-white">HTML</h4>
+                            <div class="col-span-1 hidden lg:block pt-5">
+                                <progress class="progress" value="75" max="100">75%</progress>
+                            </div>
+                            <p class="col-span-1 text-white pt-5 lg:hidden sm:block">Intermediate</p>
+                        </div>
+                    </section>
+                    <section class="mb-6 w-72 lg:w-auto hover:shadow-2xl">
+                        <div class="lg:grid grid-cols-3 bg-gray-800 border-lime-200 border-2 p-4">
+                            <div class="col-span-1 flex justify-center ">
+                                <img src="images/css.png" alt="css" class="w-16 h-16 inline-block">
+                            </div>
+                            <h4 class="col-span-1 text-white">CSS</h4>
+                            <div class="col-span-1 hidden lg:block pt-5">
+                                <progress class="progress" value="75" max="100">75%</progress>
+                            </div>
+                            <p class="col-span-1 text-white lg:hidden sm:block">Intermediate</p>
+                        </div>
+                    </section>
+                    <section class="mb-6 w-72 lg:w-auto hover:shadow-2xl">
+                        <div class="lg:grid grid-cols-3 bg-gray-800 border-lime-200 border-2 p-4">
+                            <div class="col-span-1 flex justify-center">
+                                <img src="images/python.png" alt="python" class="w-16 h-16 inline-block">
+                            </div>
+                            <h4 class="col-span-1 text-white">Python</h4>
+                            <div class="col-span-1 hidden lg:block pt-5">
+                                <progress class="progress" value="50" max="100">50%</progress>
+                            </div>
+                            <p class="col-span-1 text-white lg:hidden sm:block">Beginner</p>
+                        </div>
+                    </section>
+                    <section class="mb-6 w-72 lg:w-auto hover:shadow-2xl">
+                        <div class="lg:grid grid-cols-3 bg-gray-800 border-lime-200 border-2 p-4">
+                            <div class="col-span-1 flex justify-center">
+                                <img src="images/figma.png" alt="figma" class="w-16 h-16 inline-block">
+                            </div>
+                            <h4 class="col-span-1 title text-white">Figma</h4>
+                            <div class="col-span-1 hidden lg:block pt-5">
+                                <progress class="progress" value="85" max="100">85%</progress>
+                            </div>
+                            <p class="col-span-1 text-white lg:hidden sm:block">Advanced</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <footer class="text-right text-black px-2">
+            &copy; All rights reserved to Maedot, 2023
+        </footer>
+    <script src="js/tail.js"></script>
     </body>
 </html>
